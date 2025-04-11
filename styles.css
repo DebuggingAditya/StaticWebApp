@@ -1,0 +1,338 @@
+/* Global Styles for Both Pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Times New Roman,Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    background-color: #333;
+    color: white;
+    height: 60px;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #f8b400;
+}
+
+.search-input {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-button {
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #ff6347;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('bg-image1.jpg'); /* Replace with your home page image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #f8b400;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #ff6347;
+}
+
+/* Featured Items Section */
+.featured-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 20px;
+}
+
+.item {
+    text-align: center;
+    flex: 1;
+}
+
+.item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.item h3 {
+    margin-top: 10px;
+}
+
+/* About Section */
+.about-section {
+    background-image: url('about-bg-image2.jpeg'); /* Replace with your about page image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-section {
+    background-image: url('about-bg-image.jpeg'); /* Replace with your contact page background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.6); /* Dark background for better readability */
+    padding: 30px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #f8b400;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #ff6347;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #f8b400;
+}
+
+/* Featured Items Section */
+.featured-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 50px;
+    text-align: center;
+}
+
+.featured-items .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.featured-items .item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.featured-items .item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Hover Effect for Item */
+.featured-items .item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.featured-items .item:hover img {
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
+.featured-items .item:hover h3 {
+    color: #f8b400; /* Change text color on hover */
+}
+
+
+/* Featured Items Section */
+.featured-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 50px;
+    text-align: center;
+}
+
+.featured-items .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.featured-items .item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.featured-items .item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Hover Effect for Item */
+.featured-items .item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.featured-items .item:hover img {
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
+.featured-items .item:hover h3 {
+    color: #f8b400; /* Change text color on hover */
+}
+
+/* Media Queries for smaller screens */
+@media screen and (max-width: 900px) {
+    .featured-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .featured-items {
+        grid-template-columns: 1fr;
+    }
+}
+
+.toggle-button {
+    display: none; /* Hide checkbox */
+}
+
+label {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
